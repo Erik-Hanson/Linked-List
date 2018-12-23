@@ -1,3 +1,5 @@
+
+
 struct node
 {
 	int data;
@@ -11,7 +13,5 @@ class list
 	node* head;
 
 	public:
-	list();
 	node* insert(node* head);
-	node* remove(node* head);
 };
