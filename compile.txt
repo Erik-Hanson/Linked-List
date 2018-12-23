@@ -1,0 +1,1 @@
+g++ -o list main.cpp linkedlist.cpp linkedlist.h
