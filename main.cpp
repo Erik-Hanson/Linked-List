@@ -1,13 +1,27 @@
 #include <iostream>
 #include <cmath>
 #include "linkedlist.h"
+#include <time.h>
+#include <stdlib.h>
 using namespace std;
+
+void randomInsert(class list)
+{
+	srand (time(NULL));
+	int randomAmount = rand() % 13 + 6;
+	cout << randomAmount << endl;
+
+	for(int i = 0; i < randomAmount; i++)
+	{
+		int randomNumber = rand() % 100 + 1;
+		//insertToList
+		cout << randomNumber << " ";
+	}
+}
 
 int main() 
 {
-	node* head;
 	list linkedlist;
-	linkedlist.insert(head);
-	cout << "Hello World!" << endl;
-	return 30;
+	randomInsert(linkedlist);
+	return 0;
 }
